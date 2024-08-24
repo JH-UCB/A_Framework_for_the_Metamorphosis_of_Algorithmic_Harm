@@ -1,0 +1,52 @@
+{
+    "report_id": "unique_identifier",
+    "report_date": "ISO_date",
+    "customer_id": "customer_identifier",
+    "subsidiary_company": {
+        "company_id": "company_identifier",
+        "name": "company_name"
+    },
+    "organization": {
+        "org_id": "org_identifier",
+        "name": "org_name"
+    },
+    "model": {
+        "model_id": "model_identifier",
+        "version": "model_version",
+        "type": "model_type",
+        "owner": {
+            "owner_id": "owner_identifier",
+            "name": "owner_name",
+            "email": "owner_email",
+            "role": "role_description"
+        },
+        "parameters": {
+            "num_parameters": "integer",
+            "architecture_type": "CNN | RNN | Transformer | Custom",
+            "state": "training | inference | testing",
+            "last_updated": "ISO_date"
+        }
+    },
+    "bias_type": "string",
+    "severity": "low | medium | high",
+    "description": "text",
+    "status": "open | in_progress | resolved | closed",
+    "resolved_date": "ISO_date",
+    "resolution_details": "text",
+    "reporter": {
+        "reporter_id": "unique_identifier",
+        "name": "string",
+        "email": "string"
+    },
+    "actions": [
+        {
+            "description": "action_description",
+            "assigned_to": "team_id",
+            "deadline": "ISO_date"
+        }
+    ],
+    "tags": ["string"]
+}
+
+
+

@@ -1,0 +1,11 @@
+# conda environments:
+#
+                         /Users/home/miniconda
+                         /Users/home/miniconda/envs/hackerdojo
+base                  *  /Users/home/miniconda3
+207group                 /Users/home/miniconda3/envs/207group
+dataeng                  /Users/home/miniconda3/envs/dataeng
+ml                       /Users/home/miniconda3/envs/ml
+w200                     /Users/home/miniconda3/envs/w200
+                         /Users/home/opt/anaconda3
+

@@ -1,0 +1,20 @@
+Creating Cells
+
+1. Create a Code Cell After the Current Position:
+• Mac: Option + Enter
+	This hotkey will create a new code cell directly below the currently selected cell and move the cursor to the new cell.
+
+2. Create a Markdown Cell After the Current Position:
+• Mac: Cmd + Shift + Option + M
+	Alternatively, you can convert an existing code cell to a markdown cell using:
+	•Mac: M (when the cell is in command mode)
+
+
+Other Common Processes: 
+
+Command Palette: Cmd + Shift + Palette
+"Jupyter: Restart Kernel" 
+"Jupyter: Clear All Outputs"
+"Jupyter: Run All Cells"
+"Jupyter: Run All Cells Above"
+"Jupyter: Run All Cells Below"

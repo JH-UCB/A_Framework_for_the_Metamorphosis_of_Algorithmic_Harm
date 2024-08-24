@@ -1,0 +1,34 @@
+./../../
+├── README.md
+├── code
+│   ├── README.md
+│   └── workspace
+│       ├── conda_envs.txt
+│       ├── git_tree_080424.txt
+│       └── graph_types_structures_jdh_modified.ipynb
+├── exercise
+│   ├── README.md
+│   ├── bart_map.png
+│   ├── lines.csv
+│   ├── project_3_1.ipynb
+│   ├── project_3_2.ipynb
+│   ├── project_3_3.ipynb
+│   ├── project_3_4.ipynb
+│   ├── project_3_5.ipynb
+│   ├── solutions
+│   │   ├── README.md
+│   │   ├── bart_map.png
+│   │   ├── lines.csv
+│   │   ├── project_3_1_solution.ipynb
+│   │   ├── project_3_2_solution.ipynb
+│   │   ├── project_3_3_solution.ipynb
+│   │   ├── project_3_4_solution.ipynb
+│   │   ├── project_3_5_solution.ipynb
+│   │   ├── project_3_solution.tgz
+│   │   ├── stations.csv
+│   │   └── travel_times.csv
+│   ├── stations.csv
+│   └── travel_times.csv
+└── paper
+
+5 directories, 26 files

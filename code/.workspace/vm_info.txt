@@ -1,0 +1,121 @@
+SSH:
+ssh -i "/Users/home/Documents/Berkeley/Course Materials/2024-W205/AWS Key Pair/UCB.pem" w205@54.156.52.158  
+
+Jupyter: 
+cd /docker/clusters/anaconda_postgres
+docker-compose exec anaconda jupyter notebook --notebook-dir=/user --ip='*' --port=8888 --no-browser --allow-root
+
+SCP Template:
+scp -i [path-to-your-private-key] [username]@[remote-host]:[remote-file-path] [local-destination-path]
+
+To copy all labs: 
+scp -r -i "/Users/home/Documents/Berkeley/Course Materials/2024-W205/AWS Key Pair/UCB.pem" w205@54.156.52.158:~/user/labs/ "/Users/home/Documents/Berkeley/Course Materials/2024-W205/"
+
+cd ~/docker/clusters/anaconda_postgres
+- Each cluster has its own directory. Change to the directory for this cluster:
+docker ps 
+- Verify if you have any containers running 
+-  -a includes ‘stray’ containers
+docker-compose up -d
+- If your cluster is not running, start it with the following command:
+docker ps -a
+- Verify it's running with the following command:
+docker-compose down
+
+
+
+
+
+Directory Structure: 
+Directories Only (as of early May)
+[root@ip-172-31-48-18 w205]# tree -L 4 -d
+.
+├── backups
+│   ├── full
+│   │   └── 2024_05_14_10_52
+│   └── partial
+│       ├── 2024_05_13_16_48
+│       │   ├── docker
+│       │   ├── scripts
+│       │   └── user
+│       ├── 2024_05_14_10_01
+│       ├── 2024_05_14_14_27
+│       ├── 2024_05_14_20_28
+│       ├── 2024_05_15_07_46
+│       ├── 2024_05_16_02_00
+│       ├── 2024_05_17_13_47
+│       ├── 2024_05_18_02_00
+│       ├── 2024_05_19_02_00
+│       ├── 2024_05_20_02_00
+│       └── 2024_05_21_02_00
+├── docker
+│   ├── clusters
+│   │   ├── anaconda
+│   │   ├── anaconda_kafka_zookeeper
+│   │   ├── anaconda_mongo
+│   │   ├── anaconda_neo4j
+│   │   ├── anaconda_postgres
+│   │   ├── anaconda_postgres_neo4j
+│   │   ├── anaconda_postgres_redis
+│   │   ├── anaconda_postgres_redis_nginx
+│   │   └── anaconda_redis
+│   ├── images
+│   │   ├── w205_anaconda
+│   │   ├── w205_kafka
+│   │   ├── w205_mongo
+│   │   ├── w205_neo4j
+│   │   ├── w205_nginx
+│   │   ├── w205_postgres
+│   │   ├── w205_redis
+│   │   └── w205_zookeeper
+│   └── mounts
+│       ├── anaconda
+│       │   └── environments
+│       ├── kafka
+│       │   └── data
+│       ├── mongo
+│       │   └── data
+│       ├── neo4j
+│       │   └── data
+│       ├── postgres
+│       │   └── data
+│       ├── redis
+│       │   └── data
+│       └── zookeeper
+│           ├── data
+│           └── log
+├── scripts
+├── temp
+└── user
+    ├── how_to_guides
+    │   └── sales_database
+    │       └── data
+    ├── labs
+    │   ├── week_01-complete
+    │   ├── week_02-active
+    │   │   └── geojson_data
+    │   ├── week_03
+    │   ├── week_04
+    │   ├── week_05
+    │   ├── week_06
+    │   ├── week_07
+    │   │   ├── clean_data
+    │   │   └── dirty_data
+    │   ├── week_08
+    │   ├── week_09
+    │   ├── week_10
+    │   ├── week_11
+    │   │   ├── __pycache__
+    │   │   ├── static
+    │   │   └── templates
+    │   ├── week_12
+    │   │   ├── __pycache__
+    │   │   ├── static
+    │   │   ├── temp_csv_zip
+    │   │   ├── temp_json_zip
+    │   │   └── templates
+    │   ├── week_13
+    │   └── week_14
+    └── projects
+
+87 directories
