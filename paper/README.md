@@ -7,6 +7,7 @@
 ├── README.md
 └── source
     ├── A Framework for Understanding Sources of Harm throughout the Machine Learning Life Cycle.pdf
+    ├── ml bias example
     └── source_graph.png
-1 directory, 5 files
+1 directory, 6 files
 ```
