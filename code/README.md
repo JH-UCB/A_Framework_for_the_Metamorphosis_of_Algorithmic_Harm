@@ -5,8 +5,7 @@ Please place your code for the project in this directory.
 .
 ├── README.md
 ├── example_mongodb_schema.json
-├── graphing_notebook_jdh_FINAL.ipynb
-├── graphing_notebook_jdh_FINAL.pdf
+├── Metamorphosis_of_Algorithmic_Harm_Graphing_Notebook.ipynb
 └── images
     ├── Set_A.png
     ├── Set_A.svg
