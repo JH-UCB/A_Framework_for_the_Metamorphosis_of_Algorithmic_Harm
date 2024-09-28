@@ -21,5 +21,5 @@ Please place your code for the project in this directory.
         ├── _Operational_Model-deprecated.png
         ├── _Set_A-deprecated.svg
         └── _Set_C-dep.svg
-2 directories, 17 files
+2 directories, 16 files
 ```
